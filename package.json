@@ -4,19 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@supabase/supabase-js": "^2.50.0",
-    "@ar-js-org/ar-nft-marker-cli": "^1.0.3",
+    "adm-zip": "^0.5.16",
+    "bullmq": "^5.53.3",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "express-rate-limit": "^7.5.0",
     "jose": "^6.0.11",
     "multer": "^2.0.1",
     "node-fetch": "^3.3.2",
+    "puppeteer": "^24.10.1",
     "uuid": "^11.1.0"
   },
   "devDependencies": {

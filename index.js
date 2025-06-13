@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 4000;
 const app = express();
 app.use(limiter);
 // Rutas
-apiRouter.use('/generate-marker', checkSupabaseJWT, markerRoutes);
+apiRouter.use('/generate-marker', markerRoutes);
 apiRouter.use('/optimize-video', checkSupabaseJWT, videoRoutes);
 app.use('/api', apiRouter);
 
