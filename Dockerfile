@@ -12,10 +12,6 @@ RUN npm install
 # 4. Copia el resto del código
 COPY . .
 
-# 5. Instala el CLI de AR.js (puede estar en otro repo)
-RUN git clone https://github.com/AR-js-org/AR.js.git /arjs && \
-    cd /arjs/cli && npm install
-
 # 6. Expone el puerto
 EXPOSE 4000
 

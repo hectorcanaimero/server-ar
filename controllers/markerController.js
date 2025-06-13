@@ -12,7 +12,7 @@ exports.generateMarker = async (req, res) => {
     fs.mkdirSync(outputDir, { recursive: true });
 
     // Cambia esta ruta según la ubicación real del CLI de AR.js
-    const cliPath = '/arjs/cli/index.js';
+    const cliPath = './node_modules/.bin/ar-nft-marker-cli';
     await new Promise((resolve, reject) => {
       const cli = spawn('node', [cliPath, '-i', req.file.path, '-o', outputDir, '-n', markerId]);
       cli.stdout.on('data', data => process.stdout.write(data));
